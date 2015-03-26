@@ -543,7 +543,7 @@ namespace CSLE
                 //数字逻辑
                 //判断数字合法性
 
-                if (line.Length > 1 && line[nstart] == '0' && line[nstart + 1] == 'x') //0x....
+                if (line.Length > nstart + 1 && line[nstart] == '0' && line[nstart + 1] == 'x') //0x....
                 {
                     int iend = nstart + 2;
                     for (int i = nstart + 2; i < line.Length; i++)
